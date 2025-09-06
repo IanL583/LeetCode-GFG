@@ -1,5 +1,6 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
+        # can use min_price = float('inf') as a placeholder for anything
         max_profit = 0
         min_price = prices[0]
         for price in prices[1:]:
